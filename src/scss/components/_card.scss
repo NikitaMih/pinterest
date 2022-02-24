@@ -1,0 +1,73 @@
+.card {
+  margin-top: 1rem;
+  &__header {
+    position: relative;
+    max-width: min-content;
+    background-color: black;
+    border-radius: 1rem;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.04);
+    }
+    &:hover .card__pictures {
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+    &:hover .card__button--bottom {
+      opacity: 1;
+      transition: 0.5s;
+    }
+    &:hover .card__button--top {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+  &__pictures {
+    max-width: 15rem;
+    transition: 0.8s opacity;
+    border: $white;
+    border-radius: 1rem;
+  }
+
+  &__footer {
+    display: flex;
+  }
+  &__avatars {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.5rem solid $white;
+    border-radius: 2rem;
+  }
+  &__descriptions {
+    font-size: 1.1rem;
+    align-self: center;
+    word-break: break-all;
+    max-width: 10rem;
+  }
+  &__button--top {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    opacity: 0;
+    border-radius: 3rem;
+    border: none;
+    color: $white;
+    background-color: red;
+  }
+  &__button--bottom {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem;
+    opacity: 0;
+    border-radius: 3rem;
+    border: none;
+    color: black;
+    background-color: $white;
+    &:after {
+      content: "\2022\2022\2022";
+    }
+  }
+}

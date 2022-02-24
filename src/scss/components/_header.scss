@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 1rem;
+  background-color: white;
+  &__button {
+    font-weight: bold;
+    padding: 1.1rem;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+    background-color: #df0404;
+  }
+  &__search {
+    font-weight: bold;
+    display: block;
+    flex: auto;
+    text-indent: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 3rem;
+    border: none;
+    border: solid 0.4rem $ultra-lite-grey;
+    background-color: $ultra-lite-grey;
+    &:hover {
+      border: solid 0.4rem $lite-grey;
+      background-color: $lite-grey;
+    }
+    &:focus {
+      border: solid 0.3rem #4d4a55;
+    }
+  }
+  &__select {
+    font-weight: bold;
+    padding: 1.1rem;
+    padding-right: 1px;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+    background-color: #767676;
+  }
+}

@@ -1,0 +1,48 @@
+@media (min-width: 320px) and (max-width: 505px) {
+  .header {
+    padding: 0.1rem;
+    font-size: small;
+    &__button {
+      padding: 1.1rem;
+    }
+    &__search {
+      max-width: 35%;
+      border: solid 0.2rem $ultra-lite-grey;
+      &:hover {
+        border: solid 0.2rem $lite-grey;
+      }
+      &:focus {
+        border: solid 0.2rem #4d4a55;
+      }
+    }
+  }
+  .container {
+    .card {
+      max-width: 10rem;
+      &__pictures {
+        max-width: 10rem;
+      }
+      &__button--top {
+        padding: 0.1rem;
+        font-size: small;
+      }
+      &__button--bottom {
+        padding: 0.2rem;
+      }
+      &__avatars {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
+.report-footer {
+  @include md-min{
+    padding: 1% 0;
+  }
+}
+.report-window{
+  @include sm-max{
+    width:60%;
+  }
+}
